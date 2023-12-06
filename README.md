@@ -14,5 +14,5 @@ This program includes code that relates to classes that inherit from multiple cl
 # AguilarRosaTest2 
 This program includes code that combines several aspects of inheritance seen in the previous 2 codes. it includes an abstract class, two classes that inherit from the abstract class, each with two child classes. There is also a separate class that inherits from several classes at the same time. Each class has their own parameterized constructor, a copy constructor, a destructor that prints onto the terminal the destruction of the object,. 
 
-ThisMain, Shape, SquareShape, and RoundShape
+# ThisMain, Shape, SquareShape, and RoundShape
 These programs are all related and involve inheritance across header files. There is a parent class with 4 attributes, a parameterized constructor, destructor, getters, setters, and two methods, two child classes that inherit from the parent class that also have the aforementioned traits of the parent class, and all are saved as header (.h) files. ThisMain is the main .cpp file that invokes the .h files, and it has defined constants that interact with the objects created from the classes.
