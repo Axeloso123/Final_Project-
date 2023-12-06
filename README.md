@@ -1,5 +1,6 @@
-# Final_Project-FINAL PROJECT
-#ANGEL AGUILAR, AXEL ROSA
+# Final_Project-# 
+FINAL PROJECT
+ANGEL AGUILAR, AXEL ROSA
 
 All programs are examples of how to use inheritance in C++.
 All programs are original, including the names of the writers and date elaborated
