@@ -1,25 +1,14 @@
-/*Angel Aguilar Salazar y Henrik Axel de la Rosa
+/*Angel Aguilar Salazar and Henrik Axel de la Rosa
 2023 oct 13
-
-Ejercicio
-Realicen un nuevo codigo con los siguientes requerimientos:
-- Creen dos clases padres con sus respectivos metodos y atributos.
-- Creen dos clases hijas de esas clases padres.
-- En ambas clases padres, definan un metodo con el mismo nombre, pero distinto comportamiento
-- En una de las clases hijas hagan una metodo desde el cual se pueda acceder a las funciones con el mismo nombre de las clases padres.
-- En la otra clase hija hagan los cambios necesarios para que pueda acceder a ambas funciones (por separado), sin crear conflicto de ambigüedad.
-- Definan los destructores para cada clase y revisen que sucede cuando el codigo termina.
 */
-
 #include <bits/stdc++.h>
 using namespace std;
-
 class Math{
 	public:
-		string Found;
+	string Found;
 	Math(string found){
 		Found = found;
-						cout<<"Creando objeto Math"<<endl;
+		cout<<"Creating object Math"<<endl;
 
 	}
 	void solve(){
@@ -35,8 +24,7 @@ class Phil{
 		string Moral;
 	Phil(string moral){
 		Moral = moral;
-						cout<<"Creando objeto Phil"<<endl;
-
+		cout<<"Creating object Phil"<<endl;
 	}
 	void solve(){
 		cout<<"I must live a correct life via "<<this->Moral<<endl;
@@ -44,10 +32,7 @@ class Phil{
 	~Phil(){
 		cout<<"Destroying Philosophy"<<endl;
 	}
-	
 };
-
-//hija 1
 class Sci: public Math, public Phil{
 		private:
 			string Exper;
@@ -55,14 +40,14 @@ class Sci: public Math, public Phil{
 			Sci(string exper, string found, string moral):Math(found), Phil(moral){
 			
 				Exper=exper;
-				cout<<"Creando objeto Sci"<<endl;
+				cout<<"Creating object Sci"<<endl;
 		}
-	void metodo_Math(){
-		cout<<"Activando metodo de clase math de clase hija 1"<<endl;
+	void method_Math(){
+		cout<<"Activating method of math of child class 1"<<endl;
 		Math::solve();
 	}
-	void metodo_Phil(){
-		cout<<"Activando metodo de clase Phil de clase hija 1"<<endl;
+	void method_Phil(){
+		cout<<"Activating method of class Phil of child class 1"<<endl;
 		Phil::solve();
 	}
 	
@@ -77,13 +62,13 @@ class Comp: public Math, public Phil{
 	public:
 		Comp(string code, string found, string moral): Math(found), Phil(moral){
 			Code = code;
-			cout<<"Creando objeto Comp de clase hija 2"<<endl;
+			cout<<"Creating object Comp of child class2"<<endl;
 
 		}
 		
-	void metodo_Math_y_Phill(){
-		cout<<"Activando metodo math y phil de clase hija 2"<<endl;
-		cout<<" Creatin code"<<endl;
+	void method_Math_and_Phill(){
+		cout<<"Activathing method math and phil of child class 2"<<endl;
+		cout<<" Creating code"<<endl;
 		Math::solve();
 		cout<<endl;
 		Phil::solve();
