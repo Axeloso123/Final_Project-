@@ -1,7 +1,7 @@
 
 /*Angel Aguilar, Henrik Axel
 2023 oct 27
-Test 2, examen 2
+Test 2
 all code is original
 */
 
@@ -18,12 +18,12 @@ class Magic:AbsChar{  //
 protected:
     string name;  //
 
-private:    // Estan encapsuladas. Son privadas y nadie fuera de la clase pueda accesar a ellas.
+private:    // Encapsulation, no one outside, not even child classes can access them.
     int intel;
     int hp;
 
 public:
-    // Metodo
+    // Method
     void MagicAttack(){
         cout <<name<<" uses a magic attack!"<<endl;
     }
@@ -276,7 +276,7 @@ public:
         this->constit=constit
     }
 
-    // Getters y setters
+    // Getters setters
     int getConstit(){
         return constit;
     }
@@ -286,7 +286,7 @@ public:
     }
 
 
-    // Methof
+    // Method
     void choose(){
         cout << "your stregnth stat of "<<str<<"allows for a weapon of";
         if(str>=5){
@@ -317,7 +317,7 @@ public:
     }
 
 
-    // Methof
+    // Method
     void choose(){
         cout << "your stregnth stat of "<<str<<"allows for a weapon of";
         if(str>=5){

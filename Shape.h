@@ -1,9 +1,5 @@
 
-#pragma once // En este caso, pragma once es equivalente a las directivas de arriba (y al cierre del #endif) par evitar redefiniciones.
-             // pragma es una directiva que se utiliza comunmente para interactuar con el comportamiento del compilador.
-
-
-//Una clase padre con por lo menos 4 atributos, su constructor parametrizado, destructor, getters y setters y un par de metodos propios
+#pragma once 
 using namespace std;
 
 class Shape{ 
@@ -14,7 +10,7 @@ protected:
     float per;
 
 public:
-    // Metodos
+    // Methods
     void prop(){ //properties
         cout << "Name: " << name << endl;
         cout << "Number of sides: " << sides << endl;
@@ -42,7 +38,7 @@ public:
         cout << "(Destroying shape)" << endl;
     }
 
-    // Getters y Setters
+    // Getters and Setters
     void setName(string name){
         this->name = name;
     }
