@@ -1,5 +1,5 @@
 
-/*Angel Aguilar y Axel Roa
+/*Angel Aguilar and Axel Roa
 2023 oct 4
 
 */
