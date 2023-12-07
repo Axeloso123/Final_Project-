@@ -1,18 +1,11 @@
-//clase hija 1
 #include "Shape.h"
-/*
-- Una clase padre con por lo menos 4 atributos, su constructor parametrizado, destructor, getters y setters y un par de metodos propios
-- Dos clases hijas que hereden de la clase padre y que cumplan con los mismos requerimientos.
-*/
 class RoundShape: public Shape{
 	public:
-		//atributos
 		string color;
 		bool roll;
 		bool rotate;
 		bool ellipse; //is it an oval or a circle 
 		
-		//constructor que hereda directamente de clase padre
 		RoundShape(string name, int sides, int area, int per, string color, bool roll, bool rotate, bool ellipse):Shape(name, sides, area, per){
 			this->color=color;
 			this->roll=roll;
@@ -54,8 +47,8 @@ class RoundShape: public Shape{
 			return ellipse;
 		}
 		
-		//metodos
-		void rollHill(){
+//methods
+void rollHill(){
 			if(roll==true){
 				cout<<"This shape can roll downhill. It will roll "<<area*per<<" meters."<<endl;
 			} else{
