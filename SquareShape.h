@@ -1,31 +1,20 @@
-//clase hija 2
 #include "Shape.h"
-/*
-- Una clase padre con por lo menos 4 atributos, su constructor parametrizado, destructor, getters y setters y un par de metodos propios
-- Dos clases hijas que hereden de la clase padre y que cumplan con los mismos requerimientos.
-*/
 class SquareShape: public Shape{
 	public:
-		//atributos
+		//attributes
 		string shade;
 		bool build; //is it in a building?
 		bool prism; //are all sides the same length?
 		bool dimen; //is it a 3d shape?
-		
-		//constructor que hereda de clase padre
 		SquareShape(string name, int sides, int area, int per, string shade, bool build, bool prism, bool dimen):Shape(name, sides, area, per){
 			this->shade=shade;
 			this->build=build;
 			this->prism=prism;
 			this->dimen=dimen;
 		}
-		
-		//destructor
 		~SquareShape(){
 			cout<<"Destorying SquareShape"<<endl;
 		}
-		
-		//getters and setters
 		void setShade(string shade){
 			this->shade=shade;
 		}
@@ -53,8 +42,6 @@ class SquareShape: public Shape{
 		bool getDimen(){
 			return dimen;
 		}
-		
-		//metodos
 		void brick(){
 			if(build==true){
 				if(sides==4){
